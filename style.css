@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Mozilla+Headline:wght@200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+
+    --primary-color: #173a69;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header .top-header {
+    background-color: var(--primary-color);
+    padding: 8px 0;
+}
+
+header .top-header .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header .top-header .container .left-side ul {
+    list-style-type: none;
+}
+
+header .top-header .container .left-side ul li {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+header .top-header .container .left-side ul li a {
+    text-decoration: none;
+    color: #e6eaef;
+    font-size: 13px;
+}
+
+header .top-header .container .left-side ul li a i {
+    margin-right: 8px;
+}
+
+header .top-header .container .right-side {
+    text-align: right;
+    color: white;
+}
+
+header .top-header .container .right-side i:nth-child(2) {
+    margin: 0 30px;
+}
+
+header .main-manu {
+    padding: 14px 0;
+}
+
+header .main-manu .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .main-manu .container .logu-col {
+    width: 20%;
+}
+
+header .main-manu .container .manu-col {
+    width: 80%;
+    text-align: right;
+    align-content: center;
+}
+
+header .main-manu .container .manu-col ul {
+    list-style-type: none;
+}
+
+header .main-manu .container .manu-col ul li {
+    display: inline-block;
+    padding: 0 39px;
+    position: relative;
+}
+
+header .main-manu .container .manu-col ul li a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+header .main-manu .container .manu-col ul li:last-child {
+    padding-right: 0;
+}
+
+header .main-manu .container .manu-col ul li::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    background-color: #0c1f38;
+    bottom: -40px;
+    left: 0;
+    transition: .4s;
+}
+
+header .main-manu .container .manu-col ul li:hover::before {
+    width: 100%;
+}
+
+header .main-manu .container .manu-col ul li a:hover {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.slider-section .slide-one {
+    max-width: 100%;
+    background-image: url(img/Untitled-1.jpg);
+    min-height: 528px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+.slider-section .slide-one .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.slider-section .slide-one .container .right-side h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slider-section .slide-one .container .right-side h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.slider-section .slide-one .container .right-side p {
+    font-size: 13px;
+    color: black;
+    margin-bottom: 50PX;
+}
+
+.slider-section .slide-one .container .right-side .btn-group a {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 14px 25px;
+    color: white;
+    border: 2px solid var(--primary-color);
+    transition: .4s;
+}
+
+.slider-section .slide-one .container .right-side .btn-group a:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.slider-section .slide-one .container .right-side .btn-group a:last-child {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.slider-section .slide-one .container .right-side .btn-group a:last-child:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.sevices-section {
+    padding: 90px 0;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+.about-us-hadding {
+    color: #173a69;
+}
+
+.sevices-section .section-heading {
+    text-align: center;
+}
+
+.sevices-section .section-heading h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-image: url(img/under.png);
+    left: 103px;
+    bottom: -55px;
+    background-repeat: no-repeat;
+}
+
+.sevices-section .services {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sevices-section .services .col {
+    text-align: center;
+}
+
+.sevices-section .services .col p {
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.about-us {
+    padding: 86px 0;
+    max-width: 100%;
+    background-image: url('img/about\ us\ backgroud.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.about-us .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    text-align: left;
+
+}
+
+.about-us .container .data .section-heading h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.about-us .container .data .section-heading h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-image: url(img/about-us\ under\ design\ 1.png);
+    left: 0px;
+    bottom: -60px;
+    background-repeat: no-repeat;
+}
+
+.about-us .container .data .section-heading .p-1 {
+    font-weight: 300;
+    padding-top: 78px;
+    font-size: 15px;
+}
+
+.about-us .container .data .section-heading .p-2 {
+    font-weight: 300;
+    padding-top: 35px;
+    font-size: 15px;
+}
+
+.gallary-section {
+    padding: 97px 0;
+}
+
+.gallary-section .container .section-heading {
+    text-align: center;
+
+}
+
+.gallary-section .container .section-heading h2 {
+    position: relative;
+    max-width: 200px;
+    padding-bottom: 118px;
+}
+
+.gallary-section .container .section-heading h2::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    background-image: url(img/under.png);
+    left: -50px;
+    bottom: 44px;
+    background-repeat: no-repeat;
+}
+
+.gallary-section .container .gallary-data {
+
+    padding-bottom: 118px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.gallary-section .container .gallary-data .gallary-itam img {
+
+    width: 100%;
+}
+
+.gallary-section .container .gallary-data .gallary-itam {
+    position: relative;
+}
+
+.gallary-section .container .gallary-data .gallary-itam::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.635);
+    left: 0;
+    top: 0;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.gallary-section .container .gallary-data .gallary-itam:hover::after {
+
+    opacity: 1;
+
+}
+
+.gallary-section .container .gallary-data .gallary-itam .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    opacity: 0;
+    z-index: 1;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.gallary-section .container .gallary-data .gallary-itam:hover .caption {
+    opacity: 1;
+
+}
+
+.gallary-section .container .gallary-data .gallary-itam .caption i {
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.gallary-section .container .gallary-data .gallary-itam h3 {
+
+    font-size: 26px;
+    font-weight: 600;
+
+
+}
+
+.gallary-section .container .gallary-data .gallary-itam p {
+    font-style: italic;
+    font-size: 17px;
+
+}
+
+.gallary-section .container .BUTTON {
+
+    padding: 12px 27px;
+    color: white;
+    text-decoration: none;
+    background-color: #173a69;
+    border: 1px solid #173a69;
+    transition: .4s;
+}
+
+.gallary-section .container .section-heading .BUTTON:hover {
+
+    color: #173a69;
+    background-color: transparent;
+
+}
+
+footer .quick-contact {
+    background-color: #173a69;
+}
+
+footer .quick-contact .container {
+    text-align: center;
+    padding: 92px 267px;
+}
+
+footer .quick-contact .container p {
+
+    color: white;
+    font-size: 24px;
+}
+
+footer .quick-contact .container p a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+}
+
+footer .footer-contant {
+
+
+    padding: 74px 0;
+}
+
+footer .footer-contant .container {
+
+    text-align: center;
+}
+
+
+
+
+footer .footer-contant .container .icon-group i {
+    color: gray;
+    margin: 10px;
+    font-size: 25px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    align-content: center;
+    transition: .4s;
+}
+
+footer .footer-contant .container .icon-group i:hover {
+
+    background-color: #173a69;
+    color: white;
+    border-color: white;
+
+}
+
+footer .footer-contant .container .icon-group i:nth-child(2) {
+
+    margin: 0px 30px;
+
+}
+
+footer .socket {
+    background-color: black;
+    padding: 30px 0;
+}
+
+footer .socket .container {
+
+    text-align: center;
+}
+
+footer .socket .container p {
+    color: white;
+}
+
+footer .socket .container p a {
+    color: white;
+    font-weight: 700;
+}
+
+/* SARVICES SECTION START */
+.inner-banner {
+    background-image: url(img/SARVISES.jpg);
+    min-height: 256px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner-banner .container {
+
+    text-align: center;
+    padding: 96px 0;
+}
+
+.inner-banner .container h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+
+.inner-banner .container p {
+    color: white;
+    font-size: 14px;
+
+}
+
+.constraction {
+
+    background-image: url(img/constraction\ -background.jpg);
+}
+
+.constraction .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 122px 0;
+}
+
+.constraction .container h2 {
+    font-weight: 500;
+    font-size: 22px;
+    color: #173a69;
+    padding: 15px 0;
+}
+
+.constraction .container p {
+
+    font-size: 15px;
+}
+
+/* end services page */
+.about-us-ditails {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/about\ us\ banner.jpg);
+    min-height: 100%;
+}
+
+.about-us-ditails .container {
+    padding: 77px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 0 30px;
+
+}
+
+.about-us-ditails .container .about-part {
+
+    background-color: white;
+}
+
+.about-us-ditails .container .about-part img {
+
+
+    padding-top: 32px;
+}
+
+.about-us-ditails .container .about-part h2 {
+
+    color: #173a69;
+    position: relative;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.about-us-ditails .container .about-part h2::after {
+
+    content: "";
+    position: absolute;
+    background-image: url(img/about-\ us\ under\ design\ 2.png);
+    width: 300px;
+    height: 30px;
+    background-repeat: no-repeat;
+    left: 108px;
+    bottom: 5px;
+}
+
+.about-us-ditails .container .about-part p {
+    font-weight: 100;
+    padding: 0 25px;
+    text-align: center;
+    padding-bottom: 47px;
+    font-size: 15px;
+}
+
+.maintenance {
+
+    max-width: 100%;
+}
+
+.maintenance .maintenance-hadding h2 {
+    padding: 47px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.maintenance .maintenance-background {
+
+    background-image: url(img/maintaneance-bakground.jpg);
+}
+
+.maintenance .maintenance-background .container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.maintenance .maintenance-background .container .constraction-company {}
+
+.maintenance .maintenance-background .container .constraction-company img {
+
+    padding-top: 82px;
+}
+
+.maintenance .maintenance-background .container .constraction-company h2 {
+    padding-top: 33px;
+    color: #173a69;
+    font-size: 25px;
+}
+
+.maintenance .maintenance-background .container .constraction-company p {
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 123px;
+    font-size: 15px;
+    line-height: 1.75;
+    font-weight: 100;
+}
+
+/* contact page css */
+.contact-form {
+    padding: 90px 0;
+}
+
+.contact-form .container .damocontainer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.contact-form .container .damocontainer .leftside {
+
+    text-align: left;
+
+}
+
+.contact-form .container .damocontainer .leftside h3 {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.contact-form .container .damocontainer .leftside p {
+    font-size: 16px;
+}
+
+.contact-form .container p {
+
+
+    margin-bottom: 20px;
+}
+
+.contact-form .container form input,
+textarea {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+textarea {
+
+    min-height: 138px;
+    padding-bottom: 23px;
+}
+
+.contact-form .container form .from-group-one {
+
+    gap: 29px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-group-two {
+
+    margin: 20px 0;
+}
+
+button[type=submit] {
+    background-color: #173a69;
+    padding: 14px 37px;
+    color: white;
+    transition: .4s;
+}
+
+button:hover {
+    color: #173a69;
+    background-color: transparent;
+    border-color: #173a69;
+    border: 2px solid #173a69;
+    font-weight: 600;
+}
+
+.contact-form .container .damocontainer .rightside {
+    padding: 0 48px;
+    text-align: left;
+
+}
+
+.contact-section {
+
+    padding: 20px;
+    width: 300px;
+    font-family: sans-serif;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-item .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.contact-item strong {
+    color: #173a69;
+    margin-right: 5px;
+}
+
+.about-us-word {
+    font-weight: 500;
+    color: #173a69;
+}
